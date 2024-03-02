@@ -1,0 +1,313 @@
+@media(max-width: 1200px)
+	.main
+		.title
+			font-size: 50px
+
+	.reasons
+		.reas
+			align-items: flex-start
+			.reas_desc
+				width: 310px
+
+	.mobile_app
+		&_card
+			width: 300px
+
+	footer
+		.foot_links
+			.right_links
+				display: flex
+				flex-direction: column
+				.r_items
+					margin-top: 4px
+
+@media(max-width: 992px)
+	.menu
+		.menu_item
+			.menu_list
+				font-size: 10px
+	
+	.subheader
+		.sh_logo
+			&>img
+				width: 100%
+
+		.sh_phone_number
+			font-size: 18px
+
+		.sh_order_call
+			width: 100%
+
+	.reasons
+		.reas
+			flex-direction: column
+			align-items: center
+			.reas_icons
+				margin-right: 0
+				margin-bottom: 15px
+
+			.reas_desc
+				width: 100%
+				max-width: 340px
+
+	.mobile_app
+		&_card
+			width: 320px
+
+	.choice_car
+		.uber_car
+			width: 100%
+			margin: 54px 0 0 0
+
+@media(max-width: 768px)
+	header>nav
+		.hamburger
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			width: 26px
+			height: 10px
+			position: absolute
+			top: 50%
+			right: 10px
+			transform: translateY(-50%)
+			span
+				display: block
+				height: 2px
+				background-color: #ffffff
+				transition: 0.5s transform
+			
+			&.h_active
+				span:nth-child(1)
+					transform: rotate(45deg) translateY(5px)
+				span:nth-child(2)
+					display: none
+				span:nth-child(3)
+					transform: rotate(-45deg) translateY(-5px)
+
+	.menu
+		flex-direction: column
+		justify-content: space-around
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		position: absolute
+		top: 0
+		left: -100%
+		background-color: rgba(0, 0, 0, 0.8) 
+		transition: 0.5s left
+		&.m_active
+			left: 0%
+		.menu_item
+			.menu_list
+				font-size: 15px
+
+		.delimit
+			display: none
+
+	.subheader
+		.lg-hidden
+			display: none
+
+		.lg-visible
+			display: block
+
+		.sh_phone_number
+			margin-top: 7px
+			text-align: center
+
+		.sh_order_call
+			display: block
+			width: 172px
+			margin: 5px auto 0 auto
+			@include btn_no_hover
+
+	.main
+		padding-bottom: 100px
+		.title
+			font-size: 45px
+		.btn_main
+			@include btn_no_hover
+
+	.subtitle
+		font-size: 28px
+
+	.mobile_app
+		&_card
+			width: 250px
+			.desc_card
+				font-size: 18px
+			.card_plus
+				&:hover
+					&::before, &::after
+						background-color: $blue_color
+						
+
+	.choice_car
+		min-height: 770px
+		.cc_black
+			height: 425px
+
+	footer
+		.foot_links
+			flex-direction: column
+			align-items: center
+			margin-top: 21px
+			.left_links
+				order: 2
+				margin-top: 15px
+				position: static
+			.central_links
+				order: 1
+				width: 95%
+				max-width: 290px
+				.up_links
+					.u_items
+						margin: 0
+						font-size: 14px
+						&:nth-child(2)
+							margin: 0 5px
+				.down_links
+					flex-wrap: wrap
+					margin-top: 0px
+					.d_items
+						margin: 11px 18px 0 18px
+				.lang
+					margin-top: 10px
+			.right_links
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: center
+				order: 3
+				margin-top: 18px
+				position: static
+				.r_items
+					margin-right: 4px
+					&:last-child
+						margin-right: 0px
+
+@media(max-width: 576px)
+	header
+		margin-top: 30px
+		&>nav
+			height: 30px
+
+	.menu
+		width: 85%
+		&_item
+			width: 100%
+		&_list
+			display: block
+			text-align: center
+			padding: 10px 0
+
+	.subheader
+		height: 60px
+		.sh_sub_logo
+			display: none
+		.sh_phone_number
+			font-size: 12px
+		.sh_order_call
+			width: 100%
+			max-width: 110px
+			height: 22px
+			font-size: 10px
+
+	.main
+		min-height: 400px
+		padding-top: 101px
+		padding-bottom: 35px
+		.title
+			font-size: 30px
+			line-height: normal
+			margin-bottom: 30px
+		.m_text
+			display: none
+		.btn_main
+			width: 210px
+			height: 50px
+			margin: 72px auto 0 auto
+			font-size: 16px
+
+	.subtitle
+		font-size: 18px
+		line-height: normal
+
+	.reasons
+		padding: 20px 0 38px 0
+		.reas
+			margin-top: 24px
+			.reas_icons
+				width: 100px
+				height: 100px
+				margin-bottom: 24px
+	
+	.substrate
+		margin: 0 auto 16px auto
+
+	.mobile_app
+		padding: 27px 0 13px 0
+		&_card
+			width: 100%
+			max-width: 290px
+			height: 254px
+			padding-top: 80px
+			margin: 0 auto 30px auto
+			.card_plus
+				bottom: 27px
+	
+	.under_subtitle
+		margin-top: 10px
+		font-size: 14px
+		line-height: 21px
+
+	.choice_car
+		min-height: 390px
+		padding: 23px 0 29px 0
+		background: none
+		background-color: #070716
+		.cc_black
+			display: none
+		.subtitle, .under_subtitle
+			display: none
+		.uber_car
+			margin: 35px auto 0 auto
+		&_desc
+			margin-top: 23px
+			color: #fff
+
+	.require
+		padding: 25px 0 30px 0
+		.req_block
+			margin: 30px 0 0 0
+			.req_title
+				font-size: 16px
+			.req_list
+				padding-left: 31px
+				margin-top: 3px
+				&>li
+					font-size: 14px
+					line-height: normal
+					&::before
+						top: -1px
+
+			.req_desc
+				margin-top: 15px
+				font-size: 14px
+				line-height: normal
+
+	.all_world
+		min-height: 360px
+		padding-top: 25px
+		.link_all_city
+			bottom: 30px
+
+	footer
+		padding: 25px 0px 30px 0px
+		.divider
+			width: 95%
+			max-width: 253px
+
+
+			
