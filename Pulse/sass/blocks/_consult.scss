@@ -1,0 +1,32 @@
+.consult{
+    padding: 100px 0 108px 0;
+    background: url(../img/bg2.png) center (center/cover) no-repeat;
+    &__subtitle{
+        margin-top: 8px;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    .form__errorInput{
+        border: 2px solid #d96161;
+    }
+    .form__errorMessage{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+        color: #d96161 !important;
+    }
+}
+
+@media(max-width: 576px){
+    .consult{
+        padding: 50px 0 50px 0;
+        &__subtitle{
+            text-align: center;
+            font-size: 14px;
+            line-height: normal;
+        }
+    }
+}
